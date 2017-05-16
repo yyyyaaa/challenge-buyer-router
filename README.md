@@ -8,7 +8,10 @@ Create a module `lib/server.js` that exports a function. This function, `createS
 * `GET /buyers/:id`
 * `GET /route`
 
-All persistence should use [redis](http://redis.io). See `test/index.js` for more details.
+All persistence should use [redis](http://redis.io). 
+Source code should be in `src` dir and use redis client factory from `src/redis.js`
+
+See `test/index.js` for more details.
 
 ### `POST /buyers`
 
