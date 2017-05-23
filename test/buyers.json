@@ -45,7 +45,7 @@
       {
         "criteria": {
           "device": ["desktop"],
-          "hour": [0, 1, 2],
+          "hour": [1],
           "day": [0],
           "state": ["CA"]
         },
