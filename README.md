@@ -2,6 +2,55 @@
 
 This challenge is to route traffic according to buyer rules. You will set up an http server that can create and retrieve "buyers". The http server will also route traffic according to the preferences of the buyers.
 
+### Setup
+-  run ```npm i``` in order to install required packages.
+
+
+### Tests
+Challenge is evaluated based on tests.
+
+- run `npm test` in order to get the tests output
+
+
+### Challenge Conditions
+
+In order to **pass** the challenge **all** tests should be passing like in example bellow:
+```bash
+> node test/index.js && standard
+
+TAP version 13
+# should add buyers
+ok 1 correct statusCode
+ok 2 correct statusCode
+ok 3 correct statusCode
+ok 4 should not error
+# should not add invalid buyer
+ok 5 should not error
+ok 6 error statusCode
+# should get buyers
+ok 7 correct statusCode
+ok 8 buyer should match
+ok 9 correct statusCode
+ok 10 buyer should match
+ok 11 correct statusCode
+ok 12 buyer should match
+ok 13 should not error
+# should route traffic
+ok 14 correct statusCode
+ok 15 correct statusCode
+ok 16 correct statusCode
+ok 17 should not error
+ok 18 routes should match
+
+1..18
+# tests 18
+# pass  18
+
+# ok
+
+```
+
+
 Create a module `lib/server.js` that exports a function. This function, `createServer`, when invoked, should return an http server with the following endpoints:
 
 * `POST /buyers`
