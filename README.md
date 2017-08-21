@@ -1,13 +1,13 @@
 # Code Challenge
 
-This challenge is to route traffic according to buyer rules. You will set up an http server that can create and retrieve "buyers". The http server will also route traffic according to the preferences of the buyers.
+This challenge is to route traffic according to buyer rules. You will set up an http server (*do not use `express`*) that can create and retrieve "buyers". The http server will also route traffic according to the preferences of the buyers.
 
 ### Setup
 -  run ```npm i``` in order to install required packages.
 
 
 ### Tests
-Challenge is evaluated based on tests.
+Challenge is evaluated based on tests. Be sure to understand how [`servertest`](https://github.com/rvagg/servertest) works.
 
 - run `npm test` in order to get the tests output
 
