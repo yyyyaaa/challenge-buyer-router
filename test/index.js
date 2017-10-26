@@ -57,13 +57,13 @@ tape('should route traffic', function (t) {
   var requests = [
     {timestamp: '2017-03-12T10:30:00.000Z', state: 'NV', device: 'mobile'},
     {timestamp: '2017-03-12T01:30:00.000Z', state: 'CA', device: 'desktop'},
-    {timestamp: '2017-03-12T03:30:00.000Z', state: 'CA', device: 'desktop'}
+    // {timestamp: '2017-03-12T03:30:00.000Z', state: 'CA', device: 'desktop'}
   ]
 
   var expected = [
     'http://0.b.com',
     'http://0.c.com',
-    'http://1.a.com'
+    // 'http://1.a.com'
   ]
 
   map(requests, routeTraffic, function (err, routes) {
